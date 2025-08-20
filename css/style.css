@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background: #222;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    max-width: 1000px;
+    margin: auto;
+    padding: 2rem;
+}
+
+#sidebar {
+    width: 200px;
+    margin-right: 2rem;
+}
+
+#sidebar a {
+    display: block;
+    margin-bottom: 1rem;
+    color: #222;
+    text-decoration: none;
+}
+
+#sidebar a:hover {
+    text-decoration: underline;
+}
+
+#comic-container {
+    flex: 1;
+    text-align: center;
+}
+
+#comic-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+nav button {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+}
