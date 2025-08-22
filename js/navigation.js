@@ -13,3 +13,29 @@ function navigate(direction) {
 
     window.location.href = pages[newIndex];
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("prev").addEventListener("click", () => {
+    const direction = -1;
+    const current = window.location.pathname.split("/").pop();
+    const idx = pages.indexOf(current);
+    let newIndex = idx + direction;
+
+    if (newIndex < 0) newIndex = 0;
+    if (newIndex >= pages.length) newIndex = pages.length - 1;
+
+    window.location.href = pages[newIndex];
+  });
+
+  document.getElementById("subscribeBtn").addEventListener("click", () => {
+    const direction = 1;
+    const current = window.location.pathname.split("/").pop();
+    const idx = pages.indexOf(current);
+    let newIndex = idx + direction;
+
+    if (newIndex < 0) newIndex = 0;
+    if (newIndex >= pages.length) newIndex = pages.length - 1;
+
+    window.location.href = pages[newIndex];
+  });
+});
