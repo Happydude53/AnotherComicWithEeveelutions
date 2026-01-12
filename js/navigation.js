@@ -1,5 +1,7 @@
 const pages = [
-    "001.html"
+    "001.html",
+    "002.html",
+    "003.html"
 ];
 
 function navigate(direction) {
