@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jolt - Another Comic with Eeveelutions</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        #profile-container {
+            max-width: 900px;
+            margin: 1rem auto;
+            padding: 1rem;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .profile-header {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .profile-header img {
+            width: 250px;
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .profile-info {
+            flex: 1;
+        }
+
+        .profile-info h2 {
+            margin-top: 0;
+        }
+
+        .info-list {
+            margin-top: 0.5rem;
+        }
+
+        .info-list p {
+            margin: 0.25rem 0;
+        }
+
+        .profile-bio {
+            margin-top: 1.5rem;
+            line-height: 1.5;
+        }
+
+        .back-link {
+            margin-top: 1rem;
+            display: inline-block;
+        }
+
+        @media (max-width: 600px) {
+            .profile-header {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Another Comic with Eeveelutions</h1>
+    </header>
+
+    <main>
+        <aside id="sidebar">
+            <a href="../index.html">Home</a>
+            <a href="../latest.html">Latest</a>
+            <a href="../chapters.html">Chapters</a>
+            <a href="../characters.html">Characters</a>
+            <a href="../blog.html">Blog</a>
+        </aside>
+
+        <div id="profile-container">
+            <a href="../characters.html" class="back-link">← Back to Characters</a>
+
+            <div class="profile-header">
+                <img src="../images/characters/jolt.png" alt="Jolt">
+
+                <div class="profile-info">
+                    <h2>Jolt</h2>
+
+                    <div class="info-list">
+                        <p><strong>Species:</strong> Jolteon</p>
+                        <!-- <p><strong>Pronouns:</strong> They/Them</p> -->
+                        <!-- <p><strong>Age:</strong> ???</p> -->
+                        <p><strong>Occupation:</strong> Pizza deliverer</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-bio">
+                <h3>About</h3>
+                <p>
+                    Jolt is fast. Like really fast. Other mon have started to wonder if Jolt's brain moves faster too, partially because of his
+                    tendency to move from one hobby into another just as fast (but everything is so fun!). He also is tech savvy, so has basically taken up a part time job
+                    with the town's tech support.
+                </p>
+
+                <h3>Trivia</h3>
+                <ul>
+                    <li>Jolteons are able to produce electricity through an organ in their lungs.</li>
+                    <li>Jolt also takes advantage of static electricity, and is able to produce it really quick given his speed.</li>
+                    <li>If you ask nicely, he just might charge your phone for you. Maybe.</li>
+                </ul>
+            </div>
+            <div class="profile-gallery">
+                <h3>Gallery</h3>
+
+                <div class="grid grid-auto">
+                    <img src="../images/gallery/jolt.png" onclick="openLightbox(this)">
+                </div>
+                <p>More art soon hopefully :)</p>
+            </div>
+
+            <!-- Lightbox -->
+            <div id="lightbox">
+                <button id="prev-btn" onclick="prevImage(event)">&#10094;</button>
+                <img id="lightbox-img">
+                <button id="next-btn" onclick="nextImage(event)">&#10095;</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/navigation.js"></script>
+    <script src="../js/gallery.js"></script>
+</body>
+</html>
